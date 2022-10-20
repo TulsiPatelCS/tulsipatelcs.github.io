@@ -1,0 +1,174 @@
+
+matt:
+    display_name: "Dr Matt Roach"
+    webpage: "https://www.swansea.ac.uk/staff/m.j.roach/#d.en.89036"
+    image: /img/people/Roach_Profile_CS.jpg
+    role: faculty
+
+simon:
+    display_name: "Dr Simon Robinson"
+    webpage: "https://www.swansea.ac.uk/staff/s.n.w.robinson/#d.en.86531"
+    image: /img/people/simon-robinson.webp
+    role: faculty
+
+nicholas:
+    display_name: "Dr Nicholas Micallef"
+    role: faculty
+    image: /img/people/nicholas.png
+
+muneeb:
+    display_name: "Dr Muneeb Ahmad"
+    webpage: "https://www.swansea.ac.uk/staff/m.i.ahmad/"
+    #github: profx
+    role: faculty
+    image: /img/people/muneeb.png
+    #bio: Professor
+
+gavin:
+    display_name: "Gavin Bailey"
+    #webpage: "http://en.wikipedia.org/wiki/Cyclops_(comics)"
+    role: faculty
+    image: /img/people/gavin.png
+    #bio: aka Cyclops
+
+alan:
+    display_name: "Professor Alan Dix"
+    webpage: "https://www.swansea.ac.uk/staff/a.j.dix/"
+    #github: wolverine
+    image: /img/people/alan.png
+    role: faculty
+
+shane:
+    display_name: "Dr Shane Fleming"
+    webpage: "https://www.swansea.ac.uk/staff/s.t.fleming/"
+    role: faculty
+    image: /img/people/shane.png
+
+mattJones:
+    display_name: "Professor Matt Jones"
+    webpage: "https://www.swansea.ac.uk/staff/matt.jones/#d.en.86411"
+    role: faculty
+    image : /img/people/mattjones.png
+
+joe:
+    display_name: "Dr Joe Macinnes"
+    webpage: "https://www.swansea.ac.uk/staff/william.macinnes/"
+    role: faculty
+    image: /img/people/joemacinnes.png
+
+tomowen:
+    display_name: "Dr Tom Owen"
+    webpage: "https://www.swansea.ac.uk/staff/t.owen/"
+    role: faculty
+    image: /img/people/tomowen.png
+
+jenPearson:
+    display_name: "Dr Jen Pearson"
+    webpage: "https://www.swansea.ac.uk/staff/j.pearson/"
+    role: faculty
+    image: /img/people/jenpearson.png
+
+martinporcheron:
+    display_name: "Dr Martin Porcheron"
+    webpage: "https://www.swansea.ac.uk/staff/m.a.w.porcheron/#d.en.92518"
+    role: faculty
+    image: /img/people/martinporcheron.png
+
+almarahat:
+    display_name: "Dr Alma Rahat"
+    webpage: "https://www.swansea.ac.uk/staff/a.a.m.rahat/"
+    role: faculty
+    image: /img/people/alamarahat.png
+
+thomasreitmaier:
+    display_name: "Dr Thomas Reitmaier"
+    webpage: "https://www.swansea.ac.uk/staff/thomas.reitmaier/"
+    role: faculty
+    image: /img/people/thomasreitmaier.png
+
+solmazsafari:
+    display_name: "Mrs Solmaz Safari"
+    webpage: "https://www.swansea.ac.uk/staff/solmaz.safari/"
+    role: faculty
+    image: /img/people/solmazsafari.png
+
+deepaksahoo:
+    display_name: "Dr Deepak Sahoo"
+    webpage: "https://www.swansea.ac.uk/staff/d.r.sahoo/"
+    role: faculty
+    image: /img/people/deepaksahoo.png
+
+seanwalton:
+    display_name: "Dr Sean Walton"
+    webpage: "https://www.swansea.ac.uk/staff/s.p.walton/#d.en.89970"
+    role: faculty
+    image: /img/people/seanwalton.png
+
+adamwyner:
+    display_name: "Dr Adam Wyner"
+    webpage: "https://www.swansea.ac.uk/staff/a.z.wyner/"
+    role: faculty
+    image: /img/people/adamwyner.png
+
+darrenscott:
+    display_name: "Darren Scott"
+    role: faculty
+
+chat:
+    display_name: "Chat Wacharamanotham"
+    role: faculty
+
+
+grad-a:
+    display_name: "Peter Daish"
+    role: grad
+
+grad-b:
+    display_name: "Pranjal Jain"
+    role: grad
+
+grad-c:
+    display_name: "Rabi Bunza"
+    role: grad
+
+grad-d:
+    display_name: "Tulsi Patel"
+    role: grad
+
+alum-a:
+    display_name: "Alum A"
+    role: alum
+    bio: "Ph.D., 2013. Now at Microsoft Research."
+
+alum-b:
+    display_name: "Alum B With Way Longer Name"
+    role: alum
+
+alum-c:
+    display_name: "Alum C"
+    role: alum
+    webpage: "https://www.google.com"
+
+collab-a:
+    display_name: "Collaborator A"
+    role: collab
+
+collab-b:
+    display_name: "Collaborator B With Long Name"
+    role: collab
+
+ugrad-a:
+    display_name: "Ugrad A"
+    role: ugrad
+
+ugrad-b:
+    display_name: "Ugrad Student B With Long Name"
+    role: ugrad
+
+ugrad-alum-a:
+    display_name: "Past Ugrad A"
+    role: ugrad-alum
+
+ugrad-alum-b:
+    display_name: "Past Ugrad Student B With Long Name"
+    role: ugrad-alum
