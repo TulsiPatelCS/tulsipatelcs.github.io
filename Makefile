@@ -10,7 +10,7 @@ _includes/pubs.html: bib/pubs.bib bib/publications.tmpl
 	$(BIBBLE) $+ > $@
 
 build: _includes/pubs.html
-	jekyll build 
+	jekyll build --trace
 
 # you can configure these at the shell, e.g.:
 # SERVE_PORT=5001 make serve
