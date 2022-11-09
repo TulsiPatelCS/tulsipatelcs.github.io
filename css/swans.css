@@ -49,7 +49,7 @@ font-size: 120%;
 .sub a:hover {	text-decoration: underline;color:#0066cc;}
 
 #pageHeader {width: 750px;height: 100px; }
-.header {font: small-caps 15px/1.3em arial, helvetica, verdana, sans-serif; position: relative; top:40px; margin-left: 213px;left: 36px;border-bottom: 1px solid #0066cc; z-index: 9; width: 65%;  padding-bottom:5px;}
+.introduction {font: small-caps 15px/1.3em arial, helvetica, verdana, sans-serif; position: relative; top:40px; margin-left: 213px;left: 36px;border-bottom: 1px solid #0066cc; z-index: 9; width: 65%;  padding-bottom:5px;}
 .introduction h2 {color: #E66E00; letter-spacing: 3px;  font-variant: normal; font-size: 130%; }
 .introduction img {	padding: 3px;}
 
