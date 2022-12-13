@@ -1,65 +1,977 @@
----
-layout: default
-title: Home
-notitle: true
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Human-Centred Research Lab: Home</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet"
+              href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
+              integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+              crossorigin="anonymous">
+        <link rel="stylesheet"
+              href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="/css/group.css">
+        <link rel="stylesheet" href="/css/swans.css">
 
-# groups of columns of {roles: list, width: num, image: bool}
-role-tables:
-- - roles: [academic, pdra]
-    width: 5
-    image: true
-  - roles: [pgr]
-    width: 5
-    image: true
-- - roles: [collab, pgt]
-    width: 5
-    image: false
-  - roles: [alum]
-    width: 7
-    image: false
 
----
+    </head>
+    <body>
+        <div class="container">
+            <!-- This is a bit nasty, but it basically says be a column first, and on larger screens be a spaced out row -->
+            <div class="header d-flex
+                        flex-column
+                        flex-md-row justify-content-md-between " style="background-color:#242f60;">
+                <a href="/" class="">
+                    <picture>
+                        <source type="image/svg+xml" srcset="https://ik.imagekit.io/s1sp3stox/_web/img/logo/stacked/logo-white-stacked-en.svg?ik-sdk-version=php-2.0.0">
+                        <img src="https://ik.imagekit.io/s1sp3stox/_web/img/logo/stacked/logo-white-stacked-en.png?ik-sdk-version=php-2.0.0" srcset="https://ik.imagekit.io/s1sp3stox/_web/img/logo/stacked/logo-white-stacked-en.png?ik-sdk-version=php-2.0.0, https://ik.imagekit.io/s1sp3stox/_web/img/logo/stacked/logo-white-stacked-en@2x.png?ik-sdk-version=php-2.0.0 2x" alt="Swansea University" width="185" height="116">
+                    </picture>
+                </a>
+                <ul class="nav nav-pills justify-content-center" style=" color:#fff;">
 
-{% assign get_topic = page.url | remove: site.url | remove: "/" | split: "%20" %}
-{%- capture curr_topic %}
-  {%- for word in get_topic %}
-    {{ word | capitalize }}
-  {% endfor %}
-{% endcapture -%}
+                    
+                    
 
-{% assign final_topic = curr_topic | newline_to_br | strip_newlines | replace: '<br />', ' ' | strip_html | strip | normalize_whitespace  %}
+                        
+
+                        
+                        
+                        
+
+                        <li class="nav-item" style=" color:#fff;">
+                            <a class="nav-link "
+                               href="/index.html" style=" color:#fff;">
+                                Home
+                            </a>
+                        </li>
+
+                    
+
+                        
+
+                        
+                        
+                        
+
+                        <li class="nav-item" style=" color:#fff;">
+                            <a class="nav-link "
+                               href="/people.html" style=" color:#fff;">
+                                People
+                            </a>
+                        </li>
+
+                    
+
+                        
+
+                        
+                        
+                        
+
+                        <li class="nav-item" style=" color:#fff;">
+                            <a class="nav-link "
+                               href="/research.html" style=" color:#fff;">
+                                Research
+                            </a>
+                        </li>
+
+                    
+
+                        
+
+                        
+                        
+                        
+
+                        <li class="nav-item" style=" color:#fff;">
+                            <a class="nav-link "
+                               href="/publications.html" style=" color:#fff;">
+                                Publications
+                            </a>
+                        </li>
+
+                    
+
+                        
+
+                        
+                        
+                        
+
+                        <li class="nav-item" style=" color:#fff;">
+                            <a class="nav-link "
+                               href="/Info.html" style=" color:#fff;">
+                                Info
+                            </a>
+                        </li>
+
+                    
+
+                </ul>
+            </div>
+
+            
+
+            
+
+            
 
 
 
 <section>
-    <h2>{{final_topic}} Research</h2>
+    <h2>Digital Economy Research</h2>
     <div class="card-columns">
-        {% comment %}
-        Sort the projects by date, putting those without dates last
-        {% endcomment %}
-        {% assign projects_by_date = site.projects | sort: 'last-updated', 'first' %}
-        {% assign projects_by_date = projects_by_date | reverse %}
-        {% assign projects_by_date = projects_by_date | where:"topic",final_topic %}
-        {% for p in projects_by_date %}
-            {% if p.status != "inactive" %}
-                {% include project-card.html project=p %}
-            {% endif %}
-        {% endfor %}
+        
+        
+        
+        
+        
     </div>
 </section>
 
 
 <div id="people">
     <h2>People</h2>
-    {% for role-table in page.role-tables %}
+    
         <section class="people row justify-content-between">
-            {% for role-column in role-table %}
-                <div class="col-md-{{ role-column.width }}">
-                    {% for role in role-column.roles %}
-                        {% include role-people.html role=role filter=final_topic image=role-column.image %}
-                    {% endfor %}
+            
+                <div class="col-md-5">
+                    
+                        
+
+
+
+
+
+
+
+  
+      
+          <h3 class="pt-3"> Academics </h3>
+          <div class="role academic">
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+          </div>
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+
+
+
+
+                    
+                        
+
+
+
+
+
+
+
+  
+      
+  
+      
+          <h3 class="pt-3"> Post Doctoral Research Assistants </h3>
+          <div class="role pdra">
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+          </div>
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+
+
+
+
+                    
                 </div>
-            {% endfor %}
+            
+                <div class="col-md-5">
+                    
+                        
+
+
+
+
+
+
+
+  
+      
+  
+      
+  
+      
+          <h3 class="pt-3"> Post Graduate Research Students </h3>
+          <div class="role pgr">
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+                      
+
+
+
+
+
+
+
+    <div class="person person-with-image row align-items-center">
+        <div class="col-auto">
+            
+
+
+
+
+
+
+
+    <a href="https://www.linkedin.com/in/peter-daish-b767a4130/"
+       style="text-decoration: none">
+        
+        <img class="rounded-circle profile"
+             alt="Peter Daish"
+             title="Peter Daish"
+             src="/img/people/profile-150x150_Peter Daish.jpg" />
+    
+    </a>
+
+
+        </div>
+        <div class="col pl-0">
+            <h6 class="person-name"> 
+        <a href="https://www.linkedin.com/in/peter-daish-b767a4130/"> Peter Daish </a>
+     </h6>
+            
+                <div class="bio">"Peter has been at Swansea University since 2017 where he undertook an undergraduate degree in software engineering (BSc). In 2020 Peter achieved a bachelors' degree in Software Engineering under the supervision of Dr. Matt Roach and successfully secured a scholarship with the Economic and Social Research Council (ESRC) for a 1+3 Masters and PhD in the field of Fair Machine-Learning."</div>
+            
+            
+                
+                  <div class="bio">Human Centred Design</div>
+                
+                  <div class="bio">Human-Centred AI Interaction</div>
+                
+                  <div class="bio">Constraint & Social Responsibility</div>
+                
+                  <div class="bio">Digital Economy</div>
+                
+            
+        </div>
+
+    </div>
+
+
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+                      
+
+
+
+
+
+
+
+    <div class="person person-with-image row align-items-center">
+        <div class="col-auto">
+            
+
+
+
+
+
+
+
+    <a href="https://www.pranjaljain.in/"
+       style="text-decoration: none">
+        
+        <img class="rounded-circle profile"
+             alt="Pranjal Jain"
+             title="Pranjal Jain"
+             src="/img/people/Pranjal Jain 2021_PRANJAL JAIN.jpg" />
+    
+    </a>
+
+
+        </div>
+        <div class="col pl-0">
+            <h6 class="person-name"> 
+        <a href="https://www.pranjaljain.in/"> Pranjal Jain </a>
+     </h6>
+            
+                <div class="bio">"Pranjal is a PhD Researcher in the Centre for Doctoral Training at Swansea University UK where he focuses on enhancing human interactions and collaborations with intelligence-driven systems. Previously he has designed digital products and services with empathy focusing on users’ needs. He did his postgraduate and undergraduate studies in Human-Centred Design (HCD) and Electronics Engineering in India.His HCI journey started at the INTERACT 2017 conference where he was a student volunteer. His first formal introduction went beyond User Experience (UX). Since then he has led initiatives enabling students and practitioners to share knowledge and build professional relationships.Since 2018 he has also been involved with India HCI the annual HCI conference in cooperation with ACM. He has been building a community across borders in South Asia involving professionals researchers and many SIGCHI members from India BangladesSri Lanka & Pakistan. He is passionate about building bridges between Global North and Global South. His area of interest lies in Human-Centred AI Mixed Reality ICTD Design Research Ethics and Algorithms."</div>
+            
+            
+                
+                  <div class="bio">Human Centred Design</div>
+                
+                  <div class="bio">Human-Centred AI Interaction</div>
+                
+                  <div class="bio">Tangible User Interfaces</div>
+                
+                  <div class="bio">Useable Security and Privacy</div>
+                
+                  <div class="bio">Digital Economy</div>
+                
+            
+        </div>
+
+    </div>
+
+
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+          </div>
+      
+  
+      
+  
+      
+  
+      
+  
+
+
+
+
+                    
+                </div>
+            
         </section>
-    {% endfor %}
+    
+        <section class="people row justify-content-between">
+            
+                <div class="col-md-5">
+                    
+                        
+
+
+
+
+
+
+
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+          <h3 class="pt-3"> Collaborators </h3>
+          <div class="role collab">
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+          </div>
+      
+  
+      
+  
+
+
+
+
+                    
+                        
+
+
+
+
+
+
+
+  
+      
+  
+      
+  
+      
+  
+      
+          <h3 class="pt-3"> Masters Students </h3>
+          <div class="role pgt">
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+          </div>
+      
+  
+      
+  
+      
+  
+
+
+
+
+                    
+                </div>
+            
+                <div class="col-md-7">
+                    
+                        
+
+
+
+
+
+
+
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+          <h3 class="pt-3"> Alumni </h3>
+          <div class="role alum">
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+                  
+                  
+              
+          </div>
+      
+  
+
+
+
+
+                    
+                </div>
+            
+        </section>
+    
 </div>
+
+
+            <div class="footer" style = "background-color:#242f60; color:#fff;"  >
+                <p>
+                    <a href="http://dept.example.edu/">Department of Computer Science</a>
+                    at the
+                    <a href="https://www.swansea.ac.uk/compsci/">University of Swansea</a>
+                </p>
+            </div>
+
+        </div> <!-- /container -->
+
+        <!-- Support retina images. -->
+        <script type="text/javascript"
+                src="/js/srcset-polyfill.js"></script>
+    </body>
+</html>
