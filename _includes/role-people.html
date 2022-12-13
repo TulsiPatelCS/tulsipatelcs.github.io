@@ -1,16 +1,42 @@
 
 {% assign role-key = include.role %}
+{% assign filter = include.filter %}
 
-{% for role in site.roles %}
-    {% if role.key == role-key %}
-        <h3 class="pt-3"> {{ role.name }} </h3>
-        <div class="role {{ role.key }}">
-            {% for item in site.data.people %}
-                {% assign person = item[1] %}
-                {% if person.role == role.key %}
-                    {% include person.html person=person image=include.image %}
-                {% endif %}
-            {% endfor %}
-        </div>
-    {% endif %}
-{% endfor %}
+
+{% if filter != null and filter != "" %}
+
+
+  {% for role in site.roles %}
+      {% if role.key == role-key %}
+          <h3 class="pt-3"> {{ role.name }} </h3>
+          <div class="role {{ role.key }}">
+              {% for item in site.data.people %}
+                  {% assign person = item[1] %}
+                  {% if person.role == role.key and person.topic contains filter %}
+                      {% include person.html person=person image=include.image %}
+                  {% endif %}
+              {% endfor %}
+          </div>
+      {% endif %}
+  {% endfor %}
+
+
+{% else %}
+
+
+  {% for role in site.roles %}
+      {% if role.key == role-key %}
+          <h3 class="pt-3"> {{ role.name }} </h3>
+          <div class="role {{ role.key }}">
+              {% for item in site.data.people %}
+                  {% assign person = item[1] %}
+                  {% if person.role == role.key%}
+                      {% include person.html person=person image=include.image %}
+                  {% endif %}
+              {% endfor %}
+          </div>
+      {% endif %}
+  {% endfor %}
+
+
+{% endif %}

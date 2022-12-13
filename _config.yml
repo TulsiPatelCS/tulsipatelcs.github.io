@@ -1,5 +1,5 @@
-name: Future Interaction Technology Lab, Swansea University
-url: http://awesome.example.edu
+name: Human-Centred Research Lab
+url: 
 
 exclude: [bibble, README.md, Makefile, screenshot.png]
 
@@ -11,18 +11,19 @@ permalink: /blog/:year/:month/:day/:title.html
 
 # Sections on the "people" page.
 roles:
-  - key: faculty
-    name: Faculty
-  - key: staff
-    name: Staff
-  - key: postdoc
-    name: Researchers
-  - key: grad
-    name: Graduate Students
-  - key: ugrad
-    name: Undergraduate Students
-  - key: ugrad-alum
-    name: Past Undergraduate Students
+
+  #- key: faculty
+  #  name: Faculty
+  - key: academic
+    name: Academics
+  - key: pdra
+    name: Post Doctoral Research Assistants
+  - key: pgr
+    name: Post Graduate Research Students
+  - key: pgt
+    name: Masters Students
+#  - key: ugrad-alum
+#    name: Past Undergraduate Students
   - key: collab
     name: Collaborators
   - key: alum
@@ -49,5 +50,5 @@ navigation:
     link: /research.html
   - title: Publications
     link: /publications.html
-  - title: Code
-    link: /code.html
+  - title: Info
+    link: /Info.html

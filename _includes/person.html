@@ -25,6 +25,9 @@ there by default by Bootstrap columns.
     {% endcapture %}
 {% else %}
     {% assign name = person.display_name %}
+    {%if name == null %}
+      {%assign name = person %}
+    {%endif %}
 {% endif %}
 
 {% if include.image %}
@@ -37,7 +40,13 @@ there by default by Bootstrap columns.
             {% if person.bio %}
                 <div class="bio">{{person.bio}}</div>
             {% endif %}
+            {% if person.topic %}
+                {%for item in person.topic %}
+                  <div class="bio">{{item}}</div>
+                {%endfor %}
+            {%endif %}
         </div>
+
     </div>
 {% else %}
     <div class="person person-without-image">

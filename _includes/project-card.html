@@ -35,6 +35,11 @@
         {% if project.no-link != true or project.link %}
             <a href="{{ proj-url }}"> Read more &raquo;</a>
         {% endif %}
+        {% if project.topic %}
+            {%for item in project.topic %}
+              <a href="{{site.base}}/{{item}}">{{item}}</a>
+            {%endfor %}
+        {%endif %}
     </div>
     {% if project.people %}
         <div class="card-footer d-flex flex-row flex-wrap justify-content-center">
