@@ -1,0 +1,243 @@
+/* Swansea University Basic Stylesheet : Created by Mark Berge, Web Editor */
+
+/*
+-----------------------------------------------------------------------------
+BASIC STYLING
+-----------------------------------------------------------------------------
+*/
+
+
+body {margin: 0;	padding: 0;	background: #ffffff;	font: 85%/1.5em arial, verdana, helvetica, sans-serif;	color: #333333;	text-align: center;	}
+acronym {cursor: help;	font-style: normal;	border: none;	}
+h1 {display: none;}
+h2 {font-size: 1.5em;	font-weight: normal;	color: #922;	margin: 0 0 0.7em 0;	padding: 0;	}
+h3 {	width: 420px; height: 20px; margin: 1.2em 0 3.0em 0;	} /* margin 1.2em 0.8em 0 originally */
+h3 span {	display: none;	visibility: hidden;	}
+p {	font-size: 88%;	margin: 0 0 0.6em 0;	}
+.hidden {
+	display:none;
+}
+/* \*/ * html body p { font-size: 80%; } /* */
+
+
+/*
+-----------------------------------------------------------------------------
+BASIC CONTAINERS
+-----------------------------------------------------------------------------
+*/
+
+#container {position: relative;text-align: left;margin: 10px auto;width: 920px; border: 1px solid #000;
+	background-image: url(../images/backgrounds/File,274,en.jpg);
+	background-position: bottom;
+	background-repeat: no-repeat; }
+#intro {width: 100%;background: url(../images/headers/File,714,en.png) repeat-x;}
+
+.MainFeature {margin-top: 45px; margin-left: 250px; width: 65%; padding: 0 0 0 0; font-size: 110%;}
+.caption {font: x-small/2em tahoma, verdana, sans-serif;	text-indent: 0;	}
+#subfeature { position: absolute; left: 540px; top: 445px; font: bold 70%/3em tahoma, verdana, sans-serif; color: #922; }
+#subfeature img {	 border:1px; border-style: solid; padding: 2px;}
+#subfeature table {	border: 0px;}
+.sub {float: left;
+width: 120px;
+margin: 0 0 0px 0px;
+padding: 0px;
+font-size: 120%;
+}
+.sub img {margin-bottom: -5px;}
+.sub a {	text-decoration:none; color:#922;}
+.sub a:visited {	text-decoration: underline;color:#922;}
+.sub a:hover {	text-decoration: underline;color:#0066cc;}
+
+#pageHeader {width: 750px;height: 100px; }
+.introduction {font: small-caps 15px/1.3em arial, helvetica, verdana, sans-serif; position: relative; top:40px; margin-left: 213px;left: 36px;border-bottom: 1px solid #0066cc; z-index: 9; width: 65%;  padding-bottom:5px;}
+.introduction h2 {color: #E66E00; letter-spacing: 3px;  font-variant: normal; font-size: 130%; }
+.introduction img {	padding: 3px;}
+
+#footer {margin: 0px 0 0 0;	font: bold 70%/3em tahoma, verdana, sans-serif;	text-transform: uppercase;	letter-spacing: 1px;	 border: 1px; border-style: solid;  border-bottom: 0px;  border-left: 0px;  border-right: 0px;   width: 100%; }
+#checks {width: 935px; }
+#checks p {text-align: right;}
+
+
+/*
+-----------------------------------------------------------------------------
+MAIN MENU STYLING
+-----------------------------------------------------------------------------
+*/
+#menu {
+	text-align: left;
+	font-family: Arial, Verdana, Helvetica;
+	margin-left: 260px;
+	border-top-style: none;
+	z-index: 10;
+	width: 670px;
+	}
+
+#nav, #nav ul { /* all lists */padding: 0; margin: 0; list-style: none; line-height: 20px; font-size: 80%; font-weight: bold; background: none; z-index:10; }
+#nav ul li {font-size: 100%; padding-left: 3px; font-weight: bold;}
+#nav a {display: block; width: 11em; color: #ffffff; text-decoration: none; padding-bottom: 2px; margin-left: 12px; margin-top: -2px; }
+#nav li { /* all list items */float: left; width: 12em; font-weight: bold;  /* width needed or else Opera goes nuts */}
+#nav li ul { /* second-level lists */ position: absolute; background: white;  width: 12em; left: -999em; border:1px; border-style: solid; font-size: 110%; /* using left instead of display to hide menus because display: none isn't read by screen readers */}
+#nav li ul a { color: #0068C6; line-height: 16px; text-align: left;  margin: 3px; font-weight: bold;  font-size: 90%;}
+#nav li ul a:visited {line-height: 16px; text-align: left; font-size:  3px; font-weight: bold;  font-size: 90%;}
+#nav li ul a:hover {color: white;line-height: 16px; background-color: #0068C6;  font-weight: bold;  font-size: 90%;}
+#nav li:hover ul, #nav li.sfhover ul { /* lists nested under hovered list items */ left: auto; }
+.topnav {}
+
+
+/*
+-----------------------------------------------------------------------------
+NAVIGATION STYLING
+-----------------------------------------------------------------------------
+*/
+
+#navlist {padding-left: 10px; margin-left: 10px; border-bottom: 1px solid gray; width: 180px; margin-top: 35px; float:left;}
+#navlist li{list-style: none;margin: 0; padding: 0.10em; border-top: 1px solid gray;}
+#navlist li a { text-decoration: none; font-family: arial, verdana, helvetica; font-size: 80%; font-weight: bold; color: #0068C6;}
+#navlist li a:hover { text-decoration: none; font-family: arial, verdana, helvetica; font-size: 80%; font-weight: bold; color: #cccccc;}
+#breadcrumbs {
+	position:absolute; top: 120px; left: 20px;
+}
+#breadcrumbs a { color: #E66E00; text-decoration: none; }
+#breadcrumbs a:hover { color: #000000; text-decoration: underline;}
+#breadcrumbs ul li{font-size: 65%; color: #0066cc;  display: inline; list-style-type: none; margin: 0px; line-height: 12px;}
+#breadcrumbs ul {	margin:0px;padding: 0px; width: 100%;}
+
+
+/*
+-----------------------------------------------------------------------------
+QUICKLINKS
+-----------------------------------------------------------------------------
+*/
+#ql ul{z-index: 200;}
+#ql img {	padding: 3px;}
+#quicklinks {text-align: left; font-family: Arial, Verdana, Helvetica; border-top-style: none; }
+#quicklinks, #quicklinks ul { /* all lists */padding: 0px; margin: 0px; list-style: none; line-height: 10px; font-size: 100%; font-weight: bold; background: none; margin-left: 0px; padding-left: 0px; }
+#quicklinks ul li {font-size: 75%; padding-left: 0px; font-weight: bold;}
+#quicklinks a {display: block; width: 13.5em; color: #0066CC; text-decoration: none; padding-bottom: 2px; margin-left: 0px; margin-top: 0px; }
+#quicklinks li { /* all list items */float: left; width: 12em; font-weight: bold;  /* width needed or else Opera goes nuts */}
+#quicklinks li ul { /* second-level lists */ position: absolute; background: white;  width: 9em; left: -999em; border:1px; border-style: solid; font-size: 110%; /* using left instead of display to hide menus because display: none isn't read by screen readers */}
+#quicklinks li ul a { color: #0068C6; line-height: 10px; text-align: left;  margin: 2px; font-weight: bold;  font-size: 90%;}
+#quicklinks li ul a:visited {line-height: 10px; text-align: left; font-size:  3px; font-weight: bold;  font-size: 90%;}
+#quicklinks li ul a:hover {color: white;line-height: 10px; background-color: #0068C6;  font-weight: bold;  font-size: 90%;}
+#quicklinks li:hover ul, #quicklinks li.sfhover ul { /* lists nested under hovered list items */ left: auto; }
+
+.quicklinks_nav {background-image:  url(../images/File,272,en.png); background-repeat: no-repeat; line-height: 20px; padding-left: 12px;z-index: 10;}
+#quicklinks img {border: 0px;}
+
+
+
+/*
+-----------------------------------------------------------------------------
+BASIC LISTS
+-----------------------------------------------------------------------------
+*/
+
+
+#footer a
+	{background: #ffffff;	padding: 2px 5px;	color: #0066cc;	border: none;	margin: 0;	}
+#footer a:hover
+	{background: #0066cc;	border: none;	color: #ffffff;}
+#footer img {padding-left: 10px; padding-top: 3px;}
+#footer label {display:none;}
+.MainFeature ul li {
+	font-size: 90%; font-family: Arial, Helvetica, sans-serif; font-weight: bold;
+}
+.MainFeature table {
+	border: 1px; border-style: solid; color: #0066cc; border-color: #0066cc; font-size: 80%;
+}
+.MainFeature table td, th{
+	border: 1px; border-style: solid; color: #0066cc; padding: 3px;
+}
+
+
+h3.latest_news { background: transparent url(../images/text/File,288,en.png ) no-repeat;}
+h3.latest_research { background: transparent url(../images/text/File,306,en.png) no-repeat;margin-top: 0px;}
+h3.news { background: transparent url(../images/text/File,286,en.png) no-repeat; }
+.MainFeature h3 { margin-top: 0; }
+h3.happening {background: transparent url(../images/text/File,290,en.png) no-repeat; }
+
+
+/*
+-----------------------------------------------------------------------------
+CORPORATE NEWS IMAGES
+-----------------------------------------------------------------------------
+*/
+div.figure {
+padding: 8px;
+margin: 0.30em auto; /* needed to support centering of almost-full-width figures */
+border: 1px solid #000000;
+}
+div.figure img { width: 100%; }
+
+div.figure p { /* the default "legend" style, as opposed to "caption" */
+float: right;
+font-family: verdana, arial, sans-serif;
+font-size: 70%;
+padding-left: 1%;
+padding-right: 1%;
+line-height: 1.1em;
+margin: 0.25em auto 0 auto;
+}
+div.figure p.caption { text-align: center; }
+/* "caption" for short phrases; "legend" (default) is for continuous prose */
+
+.full { width: 85%; padding: 10px; margin: 0.67em auto; }
+/* "full" should be unnecessary, but this responds to the box model bugs in IE */
+.half { width: 50%; padding: 10px; margin: 0.5em 0.67em; }
+.third { width: 33%; padding: 10px; margin: 0.5em 0.67em; }
+.quarter { width: 25%; border: none; padding: 5px; margin: 0.25em 0.5em; }
+.fifth { width: 20%; border: none; padding: 5px; margin: 0.25em 1%; }
+
+.right { float: right; margin-left: 2%; }
+.left { float: left; margin-right: 2%; }
+
+/*
+-----------------------------------------------------------------------------
+CORPORATE NEWS Lists
+-----------------------------------------------------------------------------
+*/
+
+#latest_research ul li a{font-weight: bold; color: #663333; font-size: 80%;}
+#latest_research ul li a:visited{font-weight: bold; color: #0066cc; font-size: 80%;}
+#latest_research ul li a:hover{font-weight: bold; color: #0066cc; font-size: 80%;}
+#latest_research ul{list-style: url(../images/basic/File,435,en.png); margin: 0px 0px 0px 0px; padding-left: 35px;}
+
+
+#home_news {position: absolute;	top: 280px;	left: 510px;	width: 210px;	margin-right: 30px;	}
+#home_news h3
+	{width: 210px;	height: 25px;	margin: 0 0 0 0;	padding: 0;	}
+#home_news p, #home_news li
+	{font: x-small/1.6em tahoma, verdana, sans-serif;	text-indent: 0;	}
+#home_news ul
+	{list-style: none;	margin: 0;	padding: 0;	border-top: 1px solid #ffffff;		}
+#home_news li
+	{color: #000;	border-bottom: 1px solid #0066cc;	line-height: 1.5em;	padding: 0.5em 17px;	}
+
+#home_news  li a
+	{	display: block;	border: none;	color:#0066cc;	font-weight: bold;	margin-left: -12px;	padding-left: 12px;	background: url(arrow.gif) no-repeat 0 60%;	}
+#home_news li a:hover
+	{color: #cccccc;	background-position: -300px 60%;	}
+#home_news  li a.c
+	{	display: inline;	padding: 0;	margin: 0;	background: none;	color: #000;	font-weight: normal;	}
+#home_news li a.c:hover
+	{	color: #cccccc;	}
+
+
+#home_happening  {position: absolute;	top: 280px;	left: 700px; width: 200px;	margin-right: 10px;	}
+#home_happening h3
+	{width: 210px;	height: 25px;	margin: 0 0 0 0;	padding: 0;	}
+#home_happening  p, #home_happening  li
+	{font: x-small/1.6em tahoma, verdana, sans-serif;	color: #0066cc;	text-indent: 0;	}
+#home_happening  ul
+	{list-style: none;	margin: 0;	padding: 0;	border-top: 1px solid #ffffff;	}
+#home_happening li
+	{color: #000;	border-bottom: 1px solid #0066cc;	line-height: 1.5em;	padding: 0.5em 17px;	}
+
+#home_happening   li a
+	{	display: block;	border: none;	color: #0066cc;	font-weight: bold;	margin-left: -12px;	padding-left: 12px;	background: url(arrow.gif) no-repeat 0 60%;	}
+#home_happening  li a:hover
+	{color: #cccccc;	background-position: -300px 60%;	}
+#home_happening   li a.c
+	{	display: inline;	padding: 0;	margin: 0;	background: none;	color: #000;	font-weight: normal;	}
+#home_happening  li a.c:hover
+	{	color: #cccccc;	}

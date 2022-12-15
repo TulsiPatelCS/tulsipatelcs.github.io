@@ -1,0 +1,25 @@
+---
+layout: default
+---
+
+{{ content }}
+
+<h2> People </h2>
+<section class="people project-people">
+    {% for uname in page.people %}
+        {% assign person = site.data.people[uname] %}
+        {% if person == null %}
+          {% include person.html person=uname image=false%}
+        {%else %}
+          {% include person.html person=person image=true%}
+        {% endif %}
+    {% endfor %}
+</section>
+<h2> Research Topics </h3>
+<section class="people project-people">
+    {% for uname in page.topic %}
+      <div class="person person-without-image">
+          <a href="{{site.base}}/{{item}}">{{uname}}</a>
+      </div>
+    {% endfor %}
+</section>
