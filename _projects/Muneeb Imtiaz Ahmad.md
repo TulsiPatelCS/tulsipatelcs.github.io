@@ -13,6 +13,4 @@ topic:
 - Human Robot Interaction
 - Education
 - Health & Wellbeing
-- ''
 ---
-Muneeb Imtiaz Ahmad
