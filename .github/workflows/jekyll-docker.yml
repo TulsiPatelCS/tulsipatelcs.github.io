@@ -13,8 +13,15 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-    - name: Build the site in the jekyll/builder container
+    - uses: actions/setup-python@v4
+      with:
+        python-version: '3.9'
+        cashe: 'pip'
+    - name: Build the site in the jekyll/builder container with bibble for bib
       run: |
+        pip install -U https://github.com/sampsyo/bibble/
+        bibble bib/pubs.bib bib/publications.tmpl > _includes/pubs.html
+    - run: |
         docker run \
         -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
         jekyll/builder:latest /bin/bash -c "chmod -R 777 /srv/jekyll && jekyll build --future"
