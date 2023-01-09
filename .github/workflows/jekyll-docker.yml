@@ -20,7 +20,7 @@ jobs:
       run: |
         pip install bibble
     - name: run bibble gen html
-      run: bibble bib/publications.tmpl bib/pubs.bib  > _includes/pubs.html
+      run: bibble bib/pubs.bib bib/publications.tmpl  > _includes/pubs.html
     - name:  Build the site in the jekyll/builder container
       run: |
         docker run \
