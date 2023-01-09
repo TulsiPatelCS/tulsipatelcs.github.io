@@ -16,10 +16,11 @@ jobs:
     - uses: actions/setup-python@v4
       with:
         python-version: '3.9'
-    - name: Bibble
+    - name: Install  Bibble
       run: |
         pip install bibble
-        bibble bib/pubs.bib bib/publications.tmpl > _includes/pubs.html
+    - name: run bibble gen html
+      run: bibble bib/pubs.bib bib/publications.tmpl > _includes/pubs.html
     - name:  Build the site in the jekyll/builder container
       run: |
         docker run \
