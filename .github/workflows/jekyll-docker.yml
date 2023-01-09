@@ -16,12 +16,13 @@ jobs:
     - uses: actions/setup-python@v4
       with:
         python-version: '3.9'
-        cashe: 'pip'
-    - name: Build the site in the jekyll/builder container with bibble for bib
+        cache: 'pip'
+    - name: Bibble
       run: |
         pip install bibble
         bibble bib/pubs.bib bib/publications.tmpl > _includes/pubs.html
-    - run: |
+    - name:  Build the site in the jekyll/builder container
+      run: |
         docker run \
         -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
         jekyll/builder:latest /bin/bash -c "chmod -R 777 /srv/jekyll && jekyll build --future"
