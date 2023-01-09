@@ -19,7 +19,7 @@ jobs:
         cashe: 'pip'
     - name: Build the site in the jekyll/builder container with bibble for bib
       run: |
-        pip install -U https://github.com/sampsyo/bibble/
+        pip install bibble
         bibble bib/pubs.bib bib/publications.tmpl > _includes/pubs.html
     - run: |
         docker run \
