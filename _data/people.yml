@@ -323,3 +323,32 @@ Sean Walton:
   - Human-Centred AI Interaction
   - Education
   - Engineering & Smart Manufacturing
+
+Anna Carter:
+  display_name: Anna Carter
+  webpage:
+  image: /img/people/Anna_Anna Carter.jpg
+  role: pgr
+  bio: Anna Carter is a Ph.D. Researcher in the CDT at Swansea University where she is focusing on enhancing human interactions and collaborations with intelligence-driven systems. Her research focuses on using human-centered methods to co-create an immersive digital experience through participatory design. Designing inclusively is essential to all of her work and she is continuing as the accessibility chair for EduCHI 2023.
+  topic:
+
+Troy Astarte:
+  display_name: Troy Astarte
+  webpage:
+  image: /img/people/_C290013_Troy Astarte.jpeg
+  role: academic
+  bio: My research on the history of computing and computer science investigates the various ways in which people shape technology and technology shapes people. Inspired by history of technology and STS, I take a critical look at computer science as a discipline and shaping force. As a teaching-focused lecturer I hope to impart some of this to students.
+  topic:
+  - Education
+    
+Gesu India:
+  display_name: Gesu India
+  webpage:
+  image: /img/people/photo1673887443_GESU INDIA.jpeg
+  role: pgr
+  bio: Gesu is a PhD researcher in the Centre for Doctoral Training at Swansea University, where her research focuses on exploring disability-first approaches to effectively engage with people with vision impairments in resource-constrained contexts for collecting data-sets that drive machine learning research and assistive systems. Prior to this, she spent three years at Microsoft Research India Lab, developing curriculum and artefacts encouraging computational thinking and numeracy among children with vision impairments in India. Overall, her research interests lie at the intersection of human-computer interaction, assistive tech, and artificial intelligence. 
+  topic:
+  - Human-Centred AI Interaction
+  - Emergent Users & Technology Resource Constraint
+  - Human Centred Design;
+  
